@@ -12,8 +12,8 @@ const app=express();
 //mongoose.connect("mongodb://localhost:27017/todolistDB",{useNewUrlParser:true});
 mongoose.set('strictQuery', true);
 //mongoose connection to mongodb
-const uri=process.env.MONGO_KEY;
-mongoose.connect(uri,{useNewUrlParser:true});
+const URI=process.env.MONGO_KEY;
+mongoose.connect(URI,{useNewUrlParser:true});
 
 const connection = mongoose.connection;
 connection.once('open', () => {
