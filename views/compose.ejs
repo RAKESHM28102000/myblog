@@ -1,0 +1,16 @@
+<%- include("header");%>
+<div class="container-fluid composeclass">
+<h1><%=keyforcompose%></h1>
+<form method="post" action="/compose">
+    <div class="mb-3">
+      <label  class="form-label">Title</label>
+      <input type="text" class="form-control"  name="postTitle" placeholder="Title">
+    </div>
+    <div class="mb-3">
+      <label  class="form-label">Content</label>
+      <textarea rows="4" cols="50"  name="postContent" class="form-control" placeholder="Write here...."></textarea>
+    </div>
+    <button type="submit" class="btn btn-dark buttonform" name="name" value="composebutton">Publish</button>
+  </form>
+</div>
+<%- include("footer");%>

@@ -1,0 +1,19 @@
+<%- include("header");-%>
+<div class="container">
+    <div><h1><%=today%></h1></div>
+    <div class="home">
+        <h1><%=keyforhome%></h1> 
+        <p><%=keyforhomepara%></p>
+    </div>
+       <div>
+        <%posts.forEach(function(post){%>
+            <h1><%=post.title%></h1>
+            <p><%=post.content.substring(0,100) +"..."%><a href="/posts/<%=post._id%>">Readmore...</a></p>
+        <% });%>
+        </div>
+
+    </div>
+ 
+<%- include("footer");-%>
+
+

@@ -1,0 +1,13 @@
+<%-include("header")%>
+<div class="container">
+<h1><%=keyforremove%></h1>
+<form method="post" action="/compose">
+    <div >
+    <label class="form-label"></label>
+    <input type="text" name="removecontent" class="form-control" placeholder="enter the title">
+   </div>
+    <button type="submit" class=" btn btn-dark removebtn"name="button">Remove</button>
+
+</form>
+</div>
+<%-include("footer")%>
